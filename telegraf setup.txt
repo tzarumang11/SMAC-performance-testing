@@ -1,0 +1,22 @@
+Telegraf Setup Instructions
+1. Install the Latest Telegraf
+You can install the latest Telegraf by visiting the InfluxData Downloads page. If you already have Telegraf installed on your system, make sure it's up to date. You will need version 1.9.2 or higher.
+
+2. Configure your API Token
+Your API token is required for pushing data into InfluxDB. You can copy the following command to your terminal window to set an environment variable with your token.
+
+
+export INFLUX_TOKEN=NYiPXeJXPUnimajHEq-H3LWoYBOxik1po9vhJZxQaYvGu7Q8-7OKqlRZIUAU0gIxYGxx2TEoL_UQSyH4-EmjUQ==
+
+
+
+3. Start Telegraf
+Finally, you can run the following command to start the Telegraf agent running on your machine.
+
+
+telegraf --config http://lg.wedevit.xyz:8086/api/v2/telegrafs/081ad76efdd98000
+
+
+${VIEWSTATEGENERATOR}
+
+${OSVSTATE}
